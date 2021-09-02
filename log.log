@@ -1,8 +1,17 @@
 Config: default
 Input arguments:
-     tvc: NAME.tvc
+     tvc: 9_PiggyBank.tvc
       wc: None
-    keys: NAME.keys.json
+    keys: 9_PiggyBank.keys.json
 init_data: None
 is_update_tvc: None
-Error: failed to read smart contract file: No such file or directory (os error 2)
+
+Seed phrase: "chief mother love plug gate coach master oval butter bless father orange"
+Raw address: 0:045636f7ea2ca625a61b2795b21bcf9cd2899ea8328569edcd688fd911fba812
+testnet:
+Non-bounceable address (for init): 0QAEVjb36iymJaYbJ5WyG8-c0omeqDKFae3NaI_ZEfuoEp1n
+Bounceable address (for later access): kQAEVjb36iymJaYbJ5WyG8-c0omeqDKFae3NaI_ZEfuoEsCi
+mainnet:
+Non-bounceable address (for init): UQAEVjb36iymJaYbJ5WyG8-c0omeqDKFae3NaI_ZEfuoEibt
+Bounceable address (for later access): EQAEVjb36iymJaYbJ5WyG8-c0omeqDKFae3NaI_ZEfuoEnso
+Succeeded

@@ -11,7 +11,7 @@ fi
 
 
 
-NAME=PiggyBank
+NAME=9_PiggyBank
 
 function get_address {
 echo $(cat log.log | grep "Raw address:" | cut -d ' ' -f 3)
@@ -26,12 +26,12 @@ MAINNET=https://main.ton.dev
 NETWORK=$DEVNET
 
 echo _______
-genaddr NAME
+genaddr $NAME
 ADDRESS=$(get_address)
 
 echo DEPLOY $DEBOT_ADDRESS
 
-tonos-cli --url $NETWORK deploy NAME.tvc '{"own":["0:cdd2fdcd2b01bf154f05ba14eef99e88c7f264bb2621979e8b093df788b9298e"],"own2":["0:f08d9ad0cb548799465630c57e151847db6a5824719664f892c49a32cebff6e5"],"lim":10000000000}' --sign NAME.keys.json --abi NAME.abi.json
+tonos-cli --url $NETWORK deploy $NAME.tvc '{"own":"0:cdd2fdcd2b01bf154f05ba14eef99e88c7f264bb2621979e8b093df788b9298e","own2":"0:f08d9ad0cb548799465630c57e151847db6a5824719664f892c49a32cebff6e5","lim":10000000000}' --sign $NAME.keys.json --abi $NAME.abi.json
 
 echo DONE
 echo ADDRESS > address.log
